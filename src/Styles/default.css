@@ -1,0 +1,375 @@
+/* Default CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+*
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;	
+}
+
+
+a
+{
+    /*background-color: lightgrey;*/
+}
+
+a:link
+{
+    list-style-type: none;
+    text-decoration: none;
+    /*color: green;*/
+}
+
+a:visited
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Sets background/font property of menus on hover */
+a:hover
+{
+	list-style-type: none;
+	text-decoration: none;
+	background-color:  #A2DAF6;
+	color:  #00B1D9;
+	text-shadow: 0 .04em black;
+	}
+
+#footer a:hover
+{
+	list-style-type: none;
+	text-decoration: none;
+	background-color:  #A2DAF6;
+	color:  #00B1D9;
+	text-shadow: 0 .04em black;
+	border-radius: .5em;
+	padding: .1em;
+	}
+
+a:active
+{
+    /*color: lightgreen;*/
+}
+
+h1
+{
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body
+{
+	color: black;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: auto;
+	}
+
+#windowwrapper
+{
+	/*z-index: -10;*/
+	position:absolute;
+	display:inline;
+	width: 100%;
+	min-height: 100%;
+	/* background: url(../img/hugglebugbackground.png);
+	background-image: url(../img/hugglebugbackground.png); */
+	background-repeat: repeat;
+	background-color: #A2DAF6;
+}
+
+#backgroundimagecolour
+{
+	/*clear: both;*/
+	float: right;
+	/*z-index: 10;*/
+	position: absolute;
+	/* background: url(../img/hugglebugbackgroundcolour.png);
+	background-image: url(../img/hugglebugbackgroundcolour.png); */
+	background-repeat: no-repeat;
+	bottom: 0;
+	right: 1em;
+	/*height: 5em;*/
+	}
+
+#pagewrapper
+{
+	display: block;
+	position: relative;
+	margin-top: 2em;
+	/*margin-bottom: 2em;*/
+	/*bottom: 0;*/
+	margin-left: auto; /* 16em */
+	margin-right: auto; /* 16em */
+	width: 65em;
+	min-height: 100%;
+	/*background-color: rgb(162, 218, 246);*/
+	background-color: white;
+	border-style: solid;
+	border-width: .04em;
+	border-color: black;
+	border-radius: 1.5em;
+	box-shadow: 0 0 .5em .04em #000000;
+	}
+
+/* Sets background/font property of currently selected main menu */
+body#home a.homelink,
+body#gallery a.gallerylink,
+body#howtoorder a.howtoorderlink
+{
+    /*background-color: #00B2DD; /* #A2DAF6;*/
+	background-color: #80CAE4;
+	color: #FEFEFE;
+	text-shadow: 0 .04em black;
+}
+
+#header
+{
+	z-index: 0;
+	display: inline;
+	/*clear: both;*/
+	float: left;
+	width: 100%;
+	border-top-left-radius: 1.5em;
+	border-top-right-radius: 1.5em;
+	background-color: white; /* fallback for browsers that don't support gradient fills or background images*/
+	/* background-image: url(../img/headerbackground.png); for browsers that don't support gradient fills */
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E41D7E), to(#FEFEFE)); /* for Chrome/Safari etc. */
+	background: -moz-linear-gradient(top, #E41D7E, #FEFEFE); /* for Firefox etc. */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E41D7E', endColorstr='#FEFEFE'); /* for IE < 9 or 10 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E41D7E', endColorstr='#FEFEFE'); /* for IE < 9 or 10 */
+	background: linear-gradient(180deg, #E41D7E, #FEFEFE); /* for IE 9 & 10 */
+	font-family: 'Conv_boopee_regular';
+}
+
+.hugglebuglogosmall
+{
+	display: inline;
+	float: left;
+	margin: 1em;
+	/*height: 9.375em;
+	width: 14.813em;*/
+	height: 12.5em;
+	width: 19.75em;
+	color: transparent;
+}
+
+#hugglebugheaderbackground
+{
+	/*z-index: ;*/
+	top: -2em;
+	right: -2em;
+	clear: both;
+	/*float: right;*/
+	position: absolute;
+	display: inline;
+	overflow: hidden;
+}
+
+#header h1
+{
+	position: relative;
+	margin-top: -.5em; /* negative value pulls 'Hand Made Gifts' towards bottom of logo */
+	line-height: 0em;
+	clear: both;
+	float: left;
+	text-indent: 1.5em;
+}
+
+.homelink, .gallerylink, .howtoorderlink
+{
+	float: right;
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
+	margin-top: -.5em; /* negative value pulls 'Hand Made Gifts' towards bottom of logo */
+	margin-right: 1em;
+	padding: .25em;
+	padding-bottom: .1em;
+	text-shadow: 0 .04em lightgrey;
+	font-size: 1.1em;
+	}
+
+.mainbody
+{
+	/*margin-top: -3em;*/
+	/*font-family: 'Goudy_OldStyleBT';*/
+	font-family: 'ArialRounded';
+	font-family: 'ArielRounded';
+	border-radius: 1.5em;
+	/*background-color: #00B2DD;*/
+	background-color: #80CAE4;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	min-height: 100%;
+	}
+
+#homemainbody, #gallerymainbody, #howtoordermainbody
+{
+	clear: both;
+	position: relative;
+	padding-bottom: 9.375em;
+	min-height: 100%;
+	}
+
+#homemainbody h1, #gallerymainbody h1, #howtoordermainbody h1
+{
+	display: block;
+	position: relative;
+	clear: both;
+	width: auto;
+	font-size: 2.5em;
+	text-align: center;
+	/*line-height: 3.5em;*/
+	padding-right: 1em;
+	/*margin-top: 5.38em;/
+	/*margin-bottom: -2em;*/
+	}
+
+#homemainbody h2, #gallerymainbody h2, #howtoordermainbody h2
+{
+	position: relative;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 2em;
+}
+
+#homemainbody p, #gallerymainbody p, #howtoordermainbody p
+{
+	display: block;
+	position: relative;
+	clear: both;
+	width: auto;
+	font-size: 1.7em;
+	line-height: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-right: 1em;
+	/*padding-top: 4em;*/
+	}
+
+.roundimage
+{
+	position: relative;
+	display: inline-block;
+	float: left;
+/*	border-radius: 50%;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: .25em;
+	width: 119px;
+	height: 119px;
+	margin-left: 1em;
+	/*top: 5.55em;*/
+	/*padding-top: 4em;*/
+}
+
+.roundimage a
+{
+	display: inline-block;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: .25em;
+	width: 119px;
+	height: 119px;
+	margin-left: 1em;
+	float: left;
+	/*top: 5.55em;*/
+	/*padding-top: 4em;*/
+}
+
+.fullimage
+{
+	display: none;
+	position: absolute;
+	float: left;
+}
+
+.roundimage:hover .fullimage
+{
+	position: relative;
+	display: inline-block;
+	float: left;
+	/*top: 10em;*/
+
+}
+
+.fullimage a
+{
+	position: absolute;
+	/*display: inline-block;*/
+	/*float: left;*/
+	border-radius: 0;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: .25em;
+	width: 135px;
+	height: 167px;
+	margin-left: 1em;
+	left: -9em;
+	top: -2.5em;
+}
+
+/*.fullimage:hover + .roundimage
+{
+	display: none;
+}*/
+
+/*.fullimage, .roundimage:hover>a
+{
+	display: none;
+}*/
+
+#spacer
+{
+	z-index: 1;
+	position: relative;
+	display: block;
+	/*min-height: 7.375em;*/
+	width: 100%;
+	padding-bottom: 5em;
+	}
+
+#leftfootercolumn
+{
+	position: relative;
+	float: left;
+	padding-left: 1em;
+}
+
+#copyright p, #copyright a
+{
+	position: relative;
+	clear: both;
+	color: #A2DAF6;
+	text-align: center;
+}
+
+#footer
+{
+
+	position: relative;
+	bottom: 0;
+	vertical-align: top;
+	min-height: 10em;
+	padding: 1em;
+	border-bottom-left-radius: 1.5em;
+	border-bottom-right-radius: 1.5em;
+	background-color: white; /* fallback for browsers that don't support gradient fills or background images*/
+	/* background-image: url(../img/footerbackground.png); for browsers that don't support gradient fills */
+	background-repeat: repeat-x;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#E41D7E)); /* for Chrome/Safari etc. */
+	background: -moz-linear-gradient(top, #FEFEFE, #E41D7E); /* for Firefox etc. */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#E41D7E'); /* for IE < 9 or 10 */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#E41D7E'); /* for IE < 9 or 10 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#E41D7E');
+	background: linear-gradient(0deg, #E41D7E, #FEFEFE); /* for IE 9 & 10 */
+}
